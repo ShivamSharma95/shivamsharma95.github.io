@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shivam Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.10.1/build/css/intlTelInput.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <link rel="stylesheet" href="./src/css/style.css">
+
+
+</head>
+
+<body>
+  <script>  const path = window.location.pathname;
+
+    // if URL is not the root `/`, redirect to home
+    if (path !== "/") {
+      window.location.replace("/");
+    }</script>
+  <!-- NAVBAR -->
+  <nav>
+    <a class="logo-btn">Shivam Sharma</a>
+    <ul>
+      <li><a href="#about" class="scroll-link">About</a></li>
+      <li><a href="#skills" class="scroll-link">Skills</a></li>
+      <li><a href="#portfolio" class="scroll-link">Portfolio</a></li>
+      <li><a href="#work" class="scroll-link">Work History</a></li>
+      <li><a href="#contact" class="scroll-link">Contact</a></li>
+    </ul>
+    <a href="./src/resume/shivam_sharma_full_stack_developer_8+years.pdf" class="resume-btn">My Resume</a>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="hero-image">
+      <img src="./src/images/shivam-avatar.jpg" alt="Avatar">
+    </div>
+    <div class="hero-message">
+      <span class="red-text hey-text">Hey!</span> <span class="grey-text">I'm </span><span class="black-text"> Shivam
+        Sharma</span>
+    </div>
+    <div class="heading-container">
+      <h1>I Build Full-Stack Stuff That Actually Works!</h1>
+      <p>Code, bugs, and late-night coffee keep it all running.</p>
+      <a href="#contact" class="contact-btn scroll-link">Contact Me > </a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="white-flex">
+    <div class="about-container">
+      <img src="./src/images/coding.png" alt="Coding illustration">
+      <div class="left-align heading-container">
+        <h1>A Bit About Me</h1>
+        <h2>(& My Code)</h2>
+        <p>Hey there! I’m <strong>Shivam Sharma</strong> — a <strong>Senior Full Stack Developer</strong> who lives and
+          breathes
+          <strong>Java, Spring Boot, Angular, and Microservices</strong>.
+        </p>
+
+        <p>For over <strong>8 years</strong>, I’ve been turning coffee into clean code and complex business ideas into
+          scalable,
+          high-performance applications. From backend microservices that never break (well, almost 😅) to slick Angular
+          frontends,
+          I love building things that just work — beautifully and efficiently.</p>
+
+        <p>I’m big on <strong>Agile collaboration</strong>, <strong>code quality</strong>, and that satisfying feeling
+          when a
+          <strong>CI/CD pipeline turns all green</strong>. I’ve led projects, mentored teams, optimized legacy code,
+          and learned that there’s always room for one more <code>System.out.println()</code> (just kidding… mostly).
+        </p>
+
+        <p>I believe great software comes from curiosity, collaboration, and continuous improvement.
+          Every project is a chance to learn, innovate, and make technology just a little more human.</p>
+
+        <p>Now, I’m looking to take my skills global — open to <strong>relocation and visa sponsorship</strong> in the
+          <strong>EU, Canada or UAE</strong> — and excited to join a team where innovation, impact, and good vibes
+          come standard.
+        </p>
+        <a href="#contact" class="contact-btn scroll-link">Contact Me > </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <div class="heading-container">
+      <h1>My Skills & Stack</h1>
+      <div class="skills-table">
+
+        <div class="skill-category">
+          <h3>Languages & Frameworks</h3>
+          <span>Core Java, Spring Boot, Angular, TypeScript</span>
+        </div>
+
+        <div class="skill-category">
+          <h3>Backend & Microservices</h3>
+          <span>Microservices, REST APIs, Spring Security, Web Development</span>
+        </div>
+
+        <div class="skill-category">
+          <h3>Testing & QA</h3>
+          <span>JUnit, Mockito, Jasmine/Karma, Wiremock, Cucumber, Cypress</span>
+        </div>
+
+        <div class="skill-category">
+          <h3>DevOps & Tools</h3>
+          <span>Github Actions, Sonar, Code QL, Nexus, Jenkins, Docker, JIRA, Nexus </span>
+        </div>
+
+        <div class="skill-category">
+          <h3>Domain Knowledge</h3>
+          <span>Insurance (Currently working on), Banking Domain, Automation & Product Development, Enterprise
+            Application/Retail, </span>
+        </div>
+        <div class="skill-category">
+          <h3>Methodologies & Concepts</h3>
+          <span>Agile, Waterfall, Data Structure & Algorithms, Design Patterns, SOLID Principle</span>
+        </div>
+
+        <div class="skill-category">
+          <h3>Soft Skills</h3>
+          <span>Communication Skills, Team Collaboration</span>
+        </div>
+
+        <div class="skill-category">
+          <h3>Optimization</h3>
+          <span>Code Refactoring & Optimization</span>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROJECTS SECTION -->
+  <section id="portfolio" class="white-flex">
+    <div class="heading-container">
+      <h1>My Personal Playground</h1>
+      <div class="projects">
+        <div class="project-card">
+
+          <div class="slideshow-container">
+            <div class="left">
+              <a class="prev" onclick="plusSlides(1)">❮</a>
+            </div>
+            <div class="mySlides fade">
+              <div class="project-description">
+                <div class="project-image"> <img src="./src/images/project/eb-quotation-tool.png" alt="IBM Logo" />
+                </div>
+
+                <div class="content">
+                  <h2>EB Quotation Tool 2.0</h2>
+                  Would you like the bullets to be custom icons (like metallic dots, checkmarks, or glowing circles) to
+                  match your dark metallic theme?
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
+                    <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                      id
+                      est laborum.</li>
+                  </ul>
+                  <div class="project-tech-stack">
+                    <span class="tech-stack-item">Java</span>
+                    <span class="tech-stack-item">Angular</span>
+                    <span class="tech-stack-item">Java</span>
+                    <span class="tech-stack-item">Java</span>
+                    <span class="tech-stack-item">Java</span>
+                    <span class="tech-stack-item">Java</span>
+                    <span class="tech-stack-item">Java</span>
+                    <span class="tech-stack-item">Java</span>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="project-description">
+                <div class="project-image"> <img src="./src/images/project/eb-quotation-tool.png" alt="IBM Logo" />
+                </div>
+
+                <div class="content">
+                  <h2>EB Quotation Tool 2.0</h2>
+                  Would you like the bullets to be custom icons (like metallic dots, checkmarks, or glowing circles) to
+                  match your dark metallic theme?
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
+                    <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                      id
+                      est laborum.</li>
+                  </ul>
+                  <div class="project-tech-stack">
+                    <span class="tech-stack-item">Java</span>
+                    <span class="tech-stack-item">Angular</span>
+                    <span class="tech-stack-item">Java</span>
+                    <span class="tech-stack-item">Java</span>
+                    <span class="tech-stack-item">Java</span>
+                    <span class="tech-stack-item">Java</span>
+                    <span class="tech-stack-item">Java</span>
+                    <span class="tech-stack-item">Java</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="project-description">
+                <div class="project-image"> <img src="./src/images/project/eb-quotation-tool.png" alt="IBM Logo" />
+                </div>
+                <div class="content">
+                  <h2>EB Quotation Tool 2.0</h2>
+                  Would you like the bullets to be custom icons (like metallic dots, checkmarks, or glowing circles) to
+                  match your dark metallic theme?
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
+                    <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                      id
+                      est laborum.</li>
+                  </ul>
+                  <div class="project-tech-stack">
+                    <span class="tech-stack-item">Java</span>
+                    <span class="tech-stack-item">Angular</span>
+                    <span class="tech-stack-item">Java</span>
+                    <span class="tech-stack-item">Java</span>
+                    <span class="tech-stack-item">Java</span>
+                    <span class="tech-stack-item">Java</span>
+                    <span class="tech-stack-item">Java</span>
+                    <span class="tech-stack-item">Java</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="right">
+              <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+
+
+          </div>
+          <div>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </div>
+
+          <br>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section id="testimonials">
+    <div class="heading-container">
+      <h1>What They Said About Me</h1>
+      <div class="testimonial-cards">
+        <div class="testimonial-card" style="width:60%">
+          <div class="testimonial-card-content">
+            <div class="testimonial-icon"><i class="fa-solid fa-quote-right quote-outline"></i></div>
+            <p>"Shivam consistently demonstrates a strong sense of ownership and accountability.
+              He takes initiative to understand challenges deeply and always delivers solutions that are both reliable
+              and maintainable."</p>
+          </div>
+          <div class="work-card-footer">
+            <img src="./src/images/feedback/avatar-2.png" alt="Avatar" />
+            <div class="footer-text">
+              <span>- Team Lead & Scrum Master</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" style="width:30%">
+          <div class="testimonial-card-content">
+            <div class="testimonial-icon"><i class="fa-solid fa-quote-right quote-outline"></i></div>
+            <p>"Adaptable and quick to learn, Shivam continuously seeks ways to improve and excel."</p>
+          </div>
+          <div class="work-card-footer">
+            <img src="./src/images/feedback/avatar-1.png" alt="Avatar" />
+            <div class="footer-text">
+              <span>- Technical Architect</span>
+              <span class="work-card-location"></span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" style="width:30%">
+          <div class="testimonial-card-content">
+            <div class="testimonial-icon"><i class="fa-solid fa-quote-right quote-outline"></i></div>
+            <p>"Shivam simplifies complex problems and delivers efficient, high-quality solutions."</p>
+          </div>
+          <div class="work-card-footer">
+            <img src="./src/images/feedback/avatar-4.png" alt="Avatar" />
+            <div class="footer-text">
+              <span>- Team Collaborator</span>
+              <span class="work-card-location"></span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" style="width:60%">
+          <div class="testimonial-card-content">
+            <div class="testimonial-icon"><i class="fa-solid fa-quote-right quote-outline"></i></div>
+            <p>"He communicates ideas clearly and works seamlessly with cross-functional teams.
+              His collaborative attitude fosters a productive and positive environment, even under tight deadlines."</p>
+          </div>
+          <div class="work-card-footer">
+            <img src="./src/images/feedback/avatar-3.png" alt="Avatar" />
+            <div class="footer-text">
+              <span>- Project Stakeholder</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK EXPERIENCE SECTION -->
+  <section id="work" class="white-flex">
+    <div class="heading-container">
+      <h1>Where I've Worked</h1>
+      <div class="work-cards">
+        <div class="work-card">
+          <div class=work-card-content>
+            <h3>Senior Full Stack Developer</h3>
+            <strong class="grey-text">Aug 2021 - Present</strong>
+            <ul>
+              <li>Crafted <strong>scalable backend microservices</strong> for <strong>Macquarie Group,
+                  Australia</strong> and <strong>Belgium Allianz</strong>, including the <strong>EB Quotation
+                  Tool</strong>.</li>
+              <li>Developed <strong>Angular-driven UIs</strong> that are <strong>30% faster and smoother</strong>,
+                improving user experience.</li>
+              <li>Implemented <strong>robust error handling</strong> for reliable system performance.</li>
+              <li>Practiced <strong>Agile collaboration</strong> with clients to deliver high-quality solutions.</li>
+              <li>Led <strong>code reviews and quality initiatives</strong>, reducing production bugs by
+                <strong>20%</strong>.
+              </li>
+              <li>Continuously <strong>optimized and innovated</strong> across projects to deliver maximum impact.</li>
+            </ul>
+          </div>
+          <div class="work-card-footer">
+            <img src="./src/images/company/ibm.png" alt="IBM Logo" />
+            <div class="footer-text">
+              <span class="company-name">IBM(Global business Services)</span>
+              <span class="work-card-location">Bangalore, Karnataka, India</span>
+            </div>
+          </div>
+        </div>
+        <div class="work-card">
+          <div class=work-card-content>
+            <h3>Senior Full Stack Developer</h3>
+            <strong class="grey-text">Jan 2020 - Aug 2021</strong>
+            <ul>
+              <li>Built <strong>enterprise microservices</strong> for <strong>Best Buy, USA</strong> and
+                <strong>Dell</strong>, ensuring <strong>high performance and scalability</strong>.
+              </li>
+              <li>Developed <strong>standalone micro apps</strong> with rigorous <strong>unit and automation
+                  testing</strong> (JUnit, Mockito, Jasmine/Karma, Cypress).</li>
+              <li>Enhanced <strong>UI/UX</strong> for smoother, more intuitive user experiences.</li>
+              <li>Contributed to <strong>high-performance backend systems</strong> handling complex workflows.</li>
+              <li>Practiced <strong>Agile methodologies</strong> and <strong>continuous delivery</strong> for consistent
+                results.</li>
+              <li>Collaborated across teams to <strong>ensure maintainable, scalable solutions</strong>.</li>
+            </ul>
+          </div>
+          <div class="work-card-footer">
+            <img src="./src/images/company/accenture.png" alt="Avatar" />
+            <div class="footer-text">
+              <span>Accenture India Pvt. Ltd.</span>
+              <span class="work-card-location">Bangalore, Karnatak, India</span>
+            </div>
+          </div>
+        </div>
+        <div class="work-card">
+          <div class=work-card-content>
+            <h3>Full Stack Developer</h3>
+            <strong class="grey-text">May 2017 - Jan 2020</strong>
+            <ul>
+              <li>Worked on <strong>Tenjin</strong>, an <strong>automation tool</strong>, leading <strong>migration of
+                  legacy modules</strong>.</li>
+              <li>Managed <strong>UI, business, and data layers</strong> using Java, J2EE, JSP, JSTL, and Bootstrap.
+              </li>
+              <li>Integrated <strong>Appium and PCloudy</strong> to expand product capabilities.</li>
+              <li>Mentored team members to <strong>enhance skills and productivity</strong>.</li>
+              <li>Spearheaded <strong>architectural improvements</strong>, boosting core module performance by
+                <strong>50%</strong>.
+              </li>
+              <li>Gained <strong>on-site client experience in Malta</strong>, collaborating directly to deliver tailored
+                solutions.</li>
+            </ul>
+          </div>
+          <div class="work-card-footer">
+
+            <img src="./src/images/company/yethi.jpg" alt="Avatar" />
+            <div class="footer-text">
+              <span>Yethi Consulting Pvt. Ltd.</span>
+              <br\>
+                <span class="work-card-location">Bangalore, Karnatak, India</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="contact-container">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h1>Contact Me</h1>
+
+        <p class="contact-blurb">
+          Open to exciting roles and collaborations where quality, performance, and innovation matter. </br>Let’s create
+          something that lasts.
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-row">
+            <span><i class="fa-solid fa-location-dot"></i> <strong>Bangalore, Karnataka, India</strong></span>
+            <span><i class="fa-solid fa-globe"></i> <em>Open to relocation — EU · Canada · UAE</em></span>
+            <span><i class="fa-solid fa-envelope"></i>
+              <a href="mailto:itsshivam95@gmail.com">itsshivam95@gmail.com</a>
+              <span><i class="fa-solid fa-phone"></i>
+                <a href="tel:+918307369808">+91 83073 69808</a>
+              </span>
+            </span>
+          </div>
+
+          <div class="contact-row">
+            <span><i class="fa-brands fa-linkedin"></i>
+              <a href="https://www.linkedin.com/in/itsshivam/" target="_blank" rel="noopener">LinkedIn</a>
+            </span>
+            <span class="social-icon">
+              <a href="https://www.instagram.com/itsshivam95" target="_blank" rel="noopener">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+              </a>
+            </span>
+            <span class="social-icon">
+              <a href="https://www.facebook.com/Shivam95.Sharma" target="_blank" rel="noopener">
+                <i class="fa-brands fa-facebook-f"></i>
+                Facebook
+              </a>
+            </span>
+
+            <span class="social-icon">
+              <a href="https://www.credly.com/users/itsshivam95" target="_blank" rel="noopener">
+                <i class="fa-solid fa-award"></i> Credly
+              </a>
+            </span>
+
+          </div>
+        </div>
+
+
+      </div>
+      <!-- Contact Form -->
+      <form id="contact-form" class="contact-form">
+        <h4><span>Every great project begins with a simple conversation.</span> <br /><span>Let’s start ours
+            today.</span></h4>
+
+        <div class="input-group col">
+          <input type="text" id="from_name" name="from_name" placeholder="Enter your name" required>
+        </div>
+        <div class="row two-col">
+          <div class="input-group">
+            <input type="email" id="from_email" name="from_email" placeholder="Enter Valid Email Adress" required>
+          </div>
+          <div class="input-group">
+            <input type="tel" id="contact_number" name="contact_number" maxlength="15" inputmode="numeric"
+              pattern="[0-9]*" placeholder="Phone number(Optional)">
+          </div>
+        </div>
+        <div class="input-group col">
+          <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+
+    </div>
+  </section>
+  <div id="toast" class="toast"></div>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.10.1/build/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="./src/js/script.js"></script>
+</body>
+
+</html>

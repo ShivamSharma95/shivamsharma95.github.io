@@ -1,0 +1,31 @@
+#skills {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.skills-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.skill-category {
+  background: #fff;
+  padding: 20px 20px 29px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  width: 25%;
+}
+
+
+.skill-category h3 {
+  margin: 9px;
+}
+
+.skill-category:hover {
+  transform: scale(1.01);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}

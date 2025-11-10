@@ -1,0 +1,42 @@
+
+.toast {
+  visibility: hidden;
+  min-width: 320px;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 12px 100px;
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  top: 11%;
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 0;
+  transition: all 0.6s ease;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Toast visible animation */
+.toast.show {
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+/* ✅ Success (Green) */
+.toast.success {
+  background-color: #c5f7dd;
+  font-weight: bolder;
+  color: green
+    /* Green */
+}
+
+/* ❌ Error (Red) */
+.toast.error {
+  background-color: #ffd0cb;
+  font-weight: bolder;
+  color: #c40000
+    /* Red */
+}

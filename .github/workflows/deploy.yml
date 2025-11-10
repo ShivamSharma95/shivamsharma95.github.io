@@ -1,0 +1,30 @@
+name: Deploy to Production Repo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source repository
+        uses: actions/checkout@v4
+
+      - name: Push to Production repository
+        run: |
+          git config --global user.name "ShivamSharma95"
+          git config --global user.email "itsshivam95@gmail.com"
+
+          # clone production repo using the PAT (auth through HTTPS)
+          git clone https://x-access-token:${{ secrets.DEPLOY_TOKEN }}@github.com/ShivamSharma95/portfolio-shivam-sharma-production.git prod-repo
+
+          # clear old files and copy new build
+          rsync -av --delete --exclude '.git' ./ prod-repo/
+
+          cd prod-repo
+          git add .
+          git commit -m "🚀 Auto-deployed from main on $(date)" || echo "No changes to commit"
+          git push origin main

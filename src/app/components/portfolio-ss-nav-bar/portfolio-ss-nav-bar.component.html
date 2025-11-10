@@ -1,0 +1,11 @@
+<nav>
+    <a class="logo-btn" (click)="scrollTo('')">Shivam Sharma</a>
+    <ul>
+        <li><a class="scroll-link" (click)="scrollTo('about')">About</a></li>
+        <li><a (click)="scrollTo('skills')" class="scroll-link">Skills</a></li>
+        <li><a (click)="scrollTo('portfolio')" class="scroll-link">Portfolio</a></li>
+        <li><a (click)="scrollTo('work')" class="scroll-link">Work History</a></li>
+        <li><a (click)="scrollTo('contact')" class="scroll-link">Contact</a></li>
+    </ul>
+    <a [href]="resume" class="resume-btn">My Resume</a>
+</nav>
