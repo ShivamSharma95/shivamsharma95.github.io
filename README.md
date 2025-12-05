@@ -4,7 +4,7 @@ This is my personal developer portfolio built with **Angular**, designed to show
 
 ---
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 ### **Frontend**
 - **Angular** (latest stable version)
@@ -29,5 +29,4 @@ This is my personal developer portfolio built with **Angular**, designed to show
 
 ---
 
-## 📂 Folder Structure (High-Level)
 
